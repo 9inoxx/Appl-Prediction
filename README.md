@@ -2,7 +2,7 @@
 - Pre reqs sklearn, yfinance, pandas, matplotlib, tensorflow
 
   # Summary
-- The historical stock price data for Apple (AAPL) is loaded from a CSV file.
+- The historical stock price data for Apple is loaded from a CSV file.
 The date column is set as the index for easier time series analysis.
 Missing values are filled using a forward-fill method, which carries the last known value forward to fill in any gaps.
 - Creating Lagged Features
@@ -27,7 +27,7 @@ The features are standardized using a scaler, which transforms them to have a me
 - Splitting Data into Training and Testing Sets
 The scaled data is split into training and testing sets, with 80% used for training and 20% for testing.
 This allows the model to learn patterns from the training set and then be evaluated on how well it generalizes to unseen data in the testing set.
-It minimizes the mean squared error (MSE), which measures how close the model's predictions are to the actual values.
+It minimizes the mean squared error, which measures how close the model's predictions are to the actual values.
 - Generating Predictions
 After training, the model makes predictions for the entire dataset.
 These predictions are added as a new column in the dataset for comparison with actual closing prices.
